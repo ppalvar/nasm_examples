@@ -238,8 +238,6 @@ get_index_:
     cmp ecx, 0
     jg .get_next_index
     
-    
-    
     mov eax, edx
     
     jmp .index_already_found
@@ -336,7 +334,7 @@ CMAIN:
         
         index ecx, head, tail
         
-        PRINT_UDEC 4, ecx
+        PRINT_UDEC 4, eax
         NEWLINE
         
         inc ecx
